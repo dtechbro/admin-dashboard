@@ -1,3 +1,4 @@
+import { AllCards } from "./components/AllCards";
 import NewCardBtn from "./components/NewCardBtn";
 import Sidebar from "./components/Sidebar";
 
@@ -11,8 +12,8 @@ export default function App() {
     <main className="flex">
       <Sidebar />
 
-      <main className="w-full ">
-        <div className="w-full flex justify-between py-3 items-center px-5">
+      <main className="w-full px-10">
+        <div className="w-full flex justify-between py-6 items-center px-5">
           <h2 className="font-semibold text-lg">Signature Card&apos;s Admin</h2>
 
           <nav>
@@ -29,8 +30,7 @@ export default function App() {
             <NewCardBtn />
           </div>
         </div>
-
-
+        <AllCards />
       </main>
     </main>
   );
